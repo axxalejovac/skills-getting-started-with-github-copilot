@@ -9,11 +9,10 @@
       "type": "debugpy",
       "request": "launch",
       "module": "uvicorn",
+      "cwd": "${workspaceFolder}",
       "args": [
         "src.app:app",
-        "--reload",
-        "--reload-include",
-        "src/static/*"
+        "--reload"
       ],
       "jinja": true
     }
